@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:rgb(240, 39, 73)
+}
+
+a:hover {
+    position:absolute;
+    display: flex;
+    color:rgb(223, 70, 172);
+    background: rgb(255, 255, 255);
+    box-shadow:0 15px 25px rgb(105, 5, 151);
+    border-top: rgb(105, 5, 151);
+    border-bottom: rgb(105, 5, 151);
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+
+
+body {
+    background-color: black;
+}
+
+footer {
+    background: white;
+    position:relative;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
+img {
+    height: 300px;
+    border-style:outset;
+    border-width: 5px;
+    border-radius: 200px;
+    border-color:#830a73;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+
+h2 {
+ font-family:sans-serif
+
+}
+
+
+.box {
+    position: relative;
+    width:150px;
+    height:150px;
+    justify-content: space-evenly;
+    background: rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius: 15px; 
+
+    
+}
+
+.box h2 {
+    position:relative;
+    color:white;
+    z-index: 10;
+    justify-content: center;
+}
+
+.box p {
+    position: relative;
+    color: white;
+    z-index: 10;
+    justify-content: center;
+}
+
+.box a{
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+}
+
+.box::before {
+    content: '';
+    position:absolute;
+    width: 175px;
+    height: 300%;
+    background:linear-gradient(rgb(235, 17, 137),rgb(255, 255, 255));
+    animation: animate 4s linear infinite;
+}
+
+.box::after{
+    content: '';
+    position:absolute;
+    inset: 4px;
+   background: linear-gradient(black,rgb(105, 5, 151))
+}
+
+@keyframes animate{
+    0% {transform: rotate(0deg);} 
+    100% {transform:rotate(360deg);}
+}
+
+.bio {
+    background: url(Purple\ city.jpg);
+    background-color: #830a73;
+    background-blend-mode: screen;
+    height: 100%;
+    width: 600px;
+    overflow:hidden
+    
+}
+
+section {
+    position:relative;
+    width: 100%;
+    height: 15vh;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #830a73, #190a05);
+    flex-wrap: wrap;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+section .content {
+    max-width: 1000px;
+    text-align:center;
+}
+
+section .content h2 {
+    font-size: 4em;
+    color:white;
+    font-weight: 600;
+}
+
+section .content p {
+    color:white;
+}
+
+section .wave {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-blend-mode: screen;
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    z-index:1000;
+    opacity: 1;
+    animation-delay: 1s; 
+    bottom:0;
+    animation: move 5s ;
+}
+
+
+section .wave.wave2 {
+    z-index:999;
+    opacity: 0.85;
+    animation-delay: 2s; 
+    bottom:7px;
+    animation: move 10s linear infinite;
+ 
+}
+
+
+section .wave.wave3 {
+    z-index:998;
+    opacity: 0.85;
+    animation-delay: 4s; 
+    bottom: 8px;
+    animation: move 8s linear infinite;
+}
+
+
+section .wave.wave4 {
+    z-index:996;
+    opacity: 0.85;
+    animation-delay: 5s; 
+    bottom: 5px;
+    animation: move 16s linear infinite;
+}
+
+
+@keyframes move{
+    0%{
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50%{
+        transform: translateX(-25%) translateZ(0) scaleY(1);
+    }
+    100%{
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+
+ 
+footer {
+    
+}
+
+
