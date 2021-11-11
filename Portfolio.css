@@ -11,7 +11,6 @@ a {
 }
 
 a:hover {
-    position:absolute;
     display: flex;
     color:rgb(223, 70, 172);
     background: rgb(255, 255, 255);
@@ -26,18 +25,18 @@ a:hover {
 
 
 body {
-    background-color: black;
+   
 }
 
 footer {
     background: white;
-    position:relative;
-    display:flex;
-    justify-content: space-evenly;
-    
 }
 
-
+.about {
+color: white;
+position: relative;
+left:450px;
+}
 
 img {
     height: 300px;
@@ -67,6 +66,7 @@ h2 {
 
     
 }
+
 
 .box h2 {
     position:relative;
@@ -110,11 +110,10 @@ h2 {
 }
 
 .bio {
-    background: url(Purple\ city.jpg);
-    background-color: #830a73;
+    background: url(red\ life.jpg);
     background-blend-mode: screen;
-    height: 100%;
-    width: 600px;
+    height: 50%;
+    width: 1600px;
     overflow:hidden
     
 }
@@ -132,6 +131,25 @@ section {
     align-items:center;
 }
 
+.about {
+   border-style: solid;
+   width: 700px;
+   height:400px;
+}
+
+.projectCard {
+    display: flex;
+    justify-content:space-around
+} 
+
+
+
+.navLinks {
+    display: flex;
+    justify-content: space-evenly;
+     flex-direction: row;
+}
+
 section .content {
     max-width: 1000px;
     text-align:center;
@@ -146,6 +164,8 @@ section .content h2 {
 section .content p {
     color:white;
 }
+
+
 
 section .wave {
     position:absolute;
