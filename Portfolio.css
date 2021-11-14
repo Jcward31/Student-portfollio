@@ -22,47 +22,44 @@ a:hover {
     letter-spacing: 3px;
 }
 
-
-
-body {
-   
-}
-
-footer {
-    background: white;
-}
-
 .about {
-color: white;
-position: relative;
-left:450px;
-}
+    border-style: solid;
+   width: 700px;
+   height:400px;
+    font-size: 17px;
+    color:black;
+    display:flex;
+    position: relative;
+    margin: 20px auto;
+    flex-wrap: wrap;
+ }
+
+
 
 img {
     height: 300px;
     border-style:outset;
     border-width: 5px;
     border-radius: 200px;
-    border-color:#830a73;
-    margin-left: auto;
-    margin-right: auto;
-    display:block;
+    border-color:#000000;
+    margin: 20px auto;
+    display:flex;
 }
 
 h2 {
- font-family:sans-serif
+ font-family:sans-serif;
 
 }
 
 
 .box {
     position: relative;
-    width:150px;
-    height:150px;
+    width:175px;
+    height:175px;
     justify-content: space-evenly;
     background: rgba(0,0,0,0.5);
     overflow: hidden;
-    border-radius: 15px; 
+    border-radius: 13px; 
 
     
 }
@@ -86,6 +83,7 @@ h2 {
     position: relative;
     z-index: 10;
     justify-content: center;
+    font-size: 40px;
 }
 
 .box::before {
@@ -101,7 +99,7 @@ h2 {
     content: '';
     position:absolute;
     inset: 4px;
-   background: linear-gradient(black,rgb(105, 5, 151))
+   background: linear-gradient(rgb(0, 0, 0),rgb(253, 253, 253))
 }
 
 @keyframes animate{
@@ -111,11 +109,12 @@ h2 {
 
 .bio {
     background: url(red\ life.jpg);
-    background-blend-mode: screen;
-    height: 50%;
+    background-blend-mode:screen;
+    height: 100%;
     width: 1600px;
-    overflow:hidden
-    
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -123,7 +122,7 @@ section {
     width: 100%;
     height: 15vh;
     overflow: hidden;
-    background-image: linear-gradient(to top, #830a73, #190a05);
+    background-image: linear-gradient(to top, #000000, #ffffff);
     flex-wrap: wrap;
     background-size: cover;
     display: flex;
@@ -131,18 +130,42 @@ section {
     align-items:center;
 }
 
-.about {
-   border-style: solid;
-   width: 700px;
-   height:400px;
-}
+
 
 .projectCard {
     display: flex;
     justify-content:space-around
 } 
 
+#pro4 {
+    margin:0;
+    background-image: url("breakfast.jpg");
+    background-size: cover;
+}
 
+#pro3 {
+    margin:0;
+    background-image: url("mbti.jpg");
+    background-size: cover;
+}
+
+
+#pro2 {
+    margin:0;
+    background-image: url("arcade.jpg");
+    background-size: cover;
+}
+
+#pro1 {
+    margin:0;
+    background-image: url("retrolab.JPG");
+    background-size: cover;
+}
+
+.project1 {
+    width:100%;
+    height: 200px;
+}
 
 .navLinks {
     display: flex;
@@ -214,6 +237,10 @@ section .wave.wave4 {
     animation: move 16s linear infinite;
 }
 
+footer {
+    background: white;
+}
+
 
 @keyframes move{
     0%{
@@ -225,10 +252,3 @@ section .wave.wave4 {
     100%{
         transform: translateX(-50%) translateZ(0) scaleY(1);
     }
-
- 
-footer {
-    
-}
-
-
